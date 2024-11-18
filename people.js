@@ -1,6 +1,15 @@
 const names = require("./info/names");
+const hobbies = require("./info/hobbies");
 
-const name = "Mario";
-const surname = "Rossi";
+const fullName = names("Mario", "Rossi");
+const hobbiesList = hobbies(["Calcio", "Rugby"]);
+console.log(hobbiesList);
 
-console.log(names(name, surname));
+const createPerson = () => {
+  let person = {};
+  person.fullName = fullName;
+  person.fullName.hobbies = hobbiesList;
+  return person;
+};
+
+console.log(person);
