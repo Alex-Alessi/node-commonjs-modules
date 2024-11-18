@@ -1,12 +1,5 @@
-const firstName = (firstName) => {
-  return firstName;
+const names = (firstName, lastName) => {
+  return { firstName, lastName };
 };
 
-const lastName = (lastName) => {
-  return lastName;
-};
-
-module.exports = {
-  firstName,
-  lastName,
-};
+module.exports = names;
