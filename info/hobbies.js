@@ -1,8 +1,5 @@
 const hobbies = (...hobbies) => {
-  const hobbiesArray = hobbies.map((hobby) => {
-    return hobby;
-  });
-  return { hobbiesArray };
+  return hobbies;
 };
 
 module.exports = hobbies;
